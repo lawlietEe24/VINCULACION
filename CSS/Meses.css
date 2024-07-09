@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5; /* Fondo principal */
+}
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px; /* Aumentado el margen superior */
+    text-decoration: underline;
+    color: #6d97c7; /* Color de texto */
+}
+
+.text {
+    font-size: 18px; /* Reducido el tamaño del texto para mayor legibilidad */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify;
+    text-align-last: start;
+    margin: 20px auto;
+    max-width: 800px; /* Ajustado el ancho máximo del texto */
+    padding: 0 20px;
+    color: #333; /* Color de texto */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre cajas */
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo de las cajas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Efecto de levantar al pasar el ratón */
+}
+
+.box-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px; /* Margen inferior de la imagen */
+    display: block;
+    background-color: #ffe9d0; /* Fondo de la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.box-title {
+    font-size: 1.2em;
+    margin-bottom: 5px; /* Margen inferior del título */
+    color: #6d97c7; /* Color del título */
+}
+
+.box-description {
+    font-size: 0.9em; /* Tamaño del texto de descripción */
+    color: #666; /* Color del texto de descripción */
+}
