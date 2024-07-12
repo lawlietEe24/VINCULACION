@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Carrusel</title>
-  <link rel="stylesheet" href="CSS/Carrucel.css" />
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/Carrusel.css" />
+    <title>Carrusel</title>
+  </head>
+  <body>
+    <div class="carrusel">
+      <div class="atras">
+        <img
+          id="atras"
+          src="/assets/img/atras.svg"
+          alt="atras"
+          loading="lazy"
+        />
+      </div>
 
-    <div class="content-container">
-        <div class="logo-container">
-          <img src="logo.png" alt="Logo" class="logo">
+      <div class="imagenes">
+        <div id="img">
+          <img
+            class="img"
+            src="https://picsum.photos/200/300"
+            alt="imagen 1"
+            loading="lazy"
+          />
         </div>
-        <div class="button-container">
-          <button class="custom-button">Botón 1</button>
-          <button class="custom-button">Botón 2</button>
-        </div>
-        <div class="contenido-debajo">
-          <h2>Título</h2>
-          <p>Descripción</p>
-        </div>
-        <div class="additional-content">
-          <div class="imagen">
-            <img src="imagen1.jpg" alt="Imagen 1">
-          </div>
-          <div class="texto">
-            <h3>Título de la imagen</h3>
-            <p>Descripción de la imagen</p>
-          </div>
-        </div>
-        <div class="additional-content">
-          <div class="imagen">
-            <img src="imagen2.jpg" alt="Imagen 2">
-          </div>
-          <div class="texto">
-            <h3>Título de la imagen</h3>
-            <p>Descripción de la imagen</p>
-          </div>
+
+        <div id="texto" class="texto">
+          <h3>Proyecto 01</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+            atque non at minus! Ad alias modi sed reprehenderit hic quibusdam
+            nihil quo dolore omnis. Consequatur asperiores aliquam magni
+            excepturi aliquid?
+          </p>
         </div>
       </div>
-</body>
+
+      <div class="adelante" id="adelante">
+        <img src="/assets/img/adelante.svg" alt="adelante" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="puntos" id="puntos"></div>
+
+    <script src="JS/Carrusel.js"></script>
+  </body>
 </html>
+<

@@ -4,46 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Inicio</title>
 </head>
 <body>
 
   <div class="container-fluid">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="https://itsqmet.edu.ec/wp-content/uploads/2023/10/Unlogo-general-grande.png" alt="logo_insti" class="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="0 a 2 meses .html">0 a 2 meses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="2 a 4 meses.html">2 a 4 meses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="4 a 6 meses.html">4 a 6 meses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="6 a 8 meses.html">6 a 8 meses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="8 a  10 meses .html">8 a 10 meses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="10 a 12 meses.html">10 a 12 meses</a>
-              </li>
-            </ul>
-          </div>
+    <header class="header">
+        <div class="logo">
+            <img src="https://picsum.photos/200/300" alt="Logo de la marca">
         </div>
-      </nav>
+        <nav>
+           <ul class="nav-links">
+            <li><a href="0 a 2 meses .html">0 a 2 meses</a></li>
+            <li><a href="2 a 4 meses.html">2 a 4 meses</a></li>
+            <li><a href="4 a 6 meses.html">4 a 6 meses</a></li>
+            <li><a href="6 a 8 meses.html">6 a 8 meses</a></li>  
+            <li><a href="8 a  10 meses .html">8 a 10 meses</a></li>
+            <li><a href="10 a 12 meses.html">10 a 12 meses</a></li>
+           </ul>            
+        </nav>
+        <a class="btn" href="#"><button>Contact</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="#" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="0 a 2 meses .html">0 a 2 meses</a>
+                <a href="2 a 4 meses.html">2 a 4 meses</a>
+                <a href="4 a 6 meses.html">4 a 6 meses</a>
+                <a href="6 a 8 meses.html">6 a 8 meses</a>  
+                <a href="8 a  10 meses .html">8 a 10 meses</a>
+                <a href="10 a 12 meses.html">10 a 12 meses</a>
+            </div>
+        </div>
     </header>
 
     <div class="contenido-debajo">
@@ -54,11 +49,11 @@
 
     <div class="row justify-content-center custom-row">
       <div class="col-md-4">
-        <img src="https://via.placeholder.com/200" alt="Imagen 1" class="circle-img" style="border-radius: 50px;">
+        <img src="https://picsum.photos/200/300" alt="Imagen 1" class="circle-img">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
       <div class="col-md-4">
-        <img src="https://via.placeholder.com/200" alt="Imagen 2" class="circle-img" style="border-radius: 50px;">
+        <img src="https://picsum.photos/200/300" alt="Imagen 2" class="circle-img">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
@@ -72,8 +67,16 @@
 
   </div> <!-- Closing container-fluid -->
 
-  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzAqQ1ZBxAP+Ff2VQpcOhLpMC9t9G1WRwEf+96OtYL1N" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-pZfSvQ1y8qu35BocmZh1ITmGxeTzh3ZDuu2JLJr59JQJf0Y8F2QXrRABTp5VS1oK" crossorigin="anonymous"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mobile-menu").style.width = "100%";
+    }
 
-
+    function closeNav() {
+      document.getElementById("mobile-menu").style.width = "0";
+    }
+  </script>
 </body>
 </html>

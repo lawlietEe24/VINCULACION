@@ -1,19 +1,31 @@
-/* Tips.css */
-
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fafafa; /* Fondo gris claro */
     color: #333; /* Texto principal */
+    position: relative; /* Para que ::before funcione */
+}
+
+body::before {
+    content: "";
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-navidad-diseno-estrellas-luces-bokeh-pastel_1048-13478.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720483200&semt=ais_user');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    opacity: 0.3; /* Ajusta la opacidad para hacer la imagen más transparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
 }
 
 header {
-    background-color: #6C63FF; /* Fondo morado */
-    color: white; /* Texto blanco */
+    background-color: rgba(177, 175, 255, 0.9); /* Fondo morado semi-transparente */
+    color: white;
     text-align: center;
-    padding: 2rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
 header h1 {
@@ -22,12 +34,13 @@ header h1 {
 }
 
 main {
-    padding: 2rem 1rem;
+    padding: 30px;
     max-width: 900px;
     margin: 0 auto;
 }
 
 h2 {
+    padding: 0px;
     color: #6C63FF; /* Color de título morado */
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -39,18 +52,21 @@ h2 {
 }
 
 #intro p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    text-align: justify;
+    font-size: 25px;
 }
 
 #tips {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
 }
 
 .tip {
-    background-color: #FFE9D0; /* Fondo color piel */
+    position: relative;
+    background-color: #ffe9d0; /* Fondo color piel */
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -74,7 +90,7 @@ h2 {
 }
 
 footer {
-    background-color: #B1AFFF; /* Fondo azul lila */
+    background-color: rgba(177, 175, 255, 0.9); /* Fondo azul lila semi-transparente */
     color: white;
     text-align: center;
     padding: 1rem 0;
